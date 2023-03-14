@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+  </head>
+
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'portfolio/style.css' %}">
+
+<body>
+  <nav>
+    <div class="flex_container">
+      <div>
+        <a href="{% url 'home' %}">Home</a>
+      </div>
+      <div>
+        <a href="{% url 'blog:all_blogs' %}">Blog</a>
+      </div>
+    </div>
+  </nav>
+
+{% block content %}{% endblock %}
+
+  <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
